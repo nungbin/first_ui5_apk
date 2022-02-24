@@ -10,6 +10,17 @@
 				<Page id="page" title="{i18n>title}">
 					<content>
 						<Label text="this is a label control."></Label>
+
+						<Label text="_ _ _ _" width="100%" id="__label1"/>
+						<Input width="1em" id="__input0" value="text1" fieldWidth="100%" maxLength="1" />
+
+						<List noDataText="Drop list items here" id="__list0">
+							<items>
+								<StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="__item0"/>
+								<StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="__item1"/>
+								<StandardListItem type="Navigation" title="List Item 3" description="Description text" icon="sap-icon://picture" id="__item2"/>
+							</items>
+						</List>
 					</content>
 				</Page>
 			</pages>
