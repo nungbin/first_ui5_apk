@@ -8,7 +8,9 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+					<content>
+						<Label text="this is a label control."></Label>
+					</content>
 				</Page>
 			</pages>
 		</App>
