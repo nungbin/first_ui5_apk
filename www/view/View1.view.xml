@@ -9,18 +9,37 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Label text="this is a label control."></Label>
+						<Panel headerText="Upper center">
+							<FlexBox height="100px" alignItems="Start" justifyContent="Center">
+								<Button text="1" type="Emphasized" class="sapUiSmallMarginEnd"/>
+								<Button text="2" type="Reject" class="sapUiSmallMarginEnd"/>
+								<Button text="3" type="Accept"/>
+							</FlexBox>
+						</Panel>
 
-						<Label text="_ _ _ _" width="100%" id="__label1"/>
-						<Input width="1em" id="__input0" value="text1" fieldWidth="100%" maxLength="1" />
+						<Panel headerText="Upper right">
+							<FlexBox
+								height="300px"
+								alignItems="Start"
+								justifyContent="End">
+								<Label text="_ _ _ _" width="100%" id="__label1"/>
+								<Input width="10em" id="__input0" value="input1" fieldWidth="100%" maxLength="10"/>
+				
+								<List noDataText="Drop list items here" id="__list0">
+									<items>
+										<StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="__item0"/>
+										<StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="__item1"/>
+										<StandardListItem type="Navigation" title="List Item 3" description="Description text" icon="sap-icon://picture" id="__item2"/>
+									</items>
+								</List>
+							</FlexBox>
+						</Panel>				
 
-						<List noDataText="Drop list items here" id="__list0">
-							<items>
-								<StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="__item0"/>
-								<StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="__item1"/>
-								<StandardListItem type="Navigation" title="List Item 3" description="Description text" icon="sap-icon://picture" id="__item2"/>
-							</items>
-						</List>
+						<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid0" visible="true">
+							<sap.ui.layout:content>
+                                <Label text="Grid Control" width="100%" id="__label2"/>
+							</sap.ui.layout:content>
+						</sap.ui.layout:Grid>
 					</content>
 				</Page>
 			</pages>
