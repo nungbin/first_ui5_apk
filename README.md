@@ -1,6 +1,8 @@
 # First UI5 APK
 A big THANK-YOU to https://github.com/nicolinden/ui5app who provides a very good example of making UI5 work with Cordova.
 
+Download UI5 Runtime Mobile: https://openui5.org/releases
+
 Run below steps first before the actual build.<br />
 1. cordova platform rm browser<br />
 2. cordova platform rm android<br />
